@@ -1,7 +1,7 @@
 let toastBox = document.getElementById("toastBox");
 let successMsg = '<i class="fa-sharp fa-solid fa-circle-check"></i> Successfully Submitted'
-let errorMsg = '<i class="fa-solid fa-circle-exclamation"></i> Please fix the error';
-let invalidMsg = '<i class="fa-solid fa-xmark"></i> Invalid input, check again';
+let errorMsg = '<i class="fa-solid fa-xmark"></i> Please fix the error';
+let invalidMsg = '<i class="fa-solid fa-circle-exclamation"></i> Invalid input, check again';
 
 function showToast(msg) {
     let toast = document.createElement('div');
@@ -15,8 +15,8 @@ function showToast(msg) {
         toast.classList.add('invalid')
     }
 
-    setTimeout(()=> {
+    setTimeout(() => {
         toast.remove();
-    },6000);
+    }, 6000);
 }
 

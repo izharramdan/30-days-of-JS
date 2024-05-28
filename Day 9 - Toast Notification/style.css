@@ -87,9 +87,9 @@ body {
 }
 
 .toast.error::after {
-  color: red;
+  background: red;
 }
 
 .toast.invalid::after {
-  color: orange;
+  background: orange;
 }
